@@ -1,14 +1,16 @@
 <?php
 include_once 'Cat.php';
+include_once 'Dog.php';
 
-// $myCar = new Car("Dacia", 19000);
+// $Mincis = new Cat();
+// $Brincis = new Cat();
 
-$Mincis = new Cat();
-$Brincis = new Cat();
+// $Mincis->birthday();
+// $Brincis->birthday();
 
-$Mincis->birthday();
-$Brincis->birthday();
+// Cat::moew();
 
-Cat::moew();
+$Dog = new Dog("Reksis", 6);
 
+Dog::woof();
 ?>
