@@ -1,20 +1,14 @@
 <?php
-class Dog{
-    public $name;
-    private $age;
-
-    public function __construct($name, $age){
-        $this->name = $name;
-        $this->age = $age;
-    }
+include_once 'Animal.php';
+class Dog extends Animal{
 
     public function birthday(){
         $this->age = $age+1;
         echo $this->age;
     }
 
-    static function woof(){
-        echo "woof!";
+    static function eat(){
+        echo "I like bones";
     }
 }
 

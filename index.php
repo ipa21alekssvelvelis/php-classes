@@ -11,6 +11,13 @@ include_once 'Dog.php';
 // Cat::moew();
 
 $Dog = new Dog("Reksis", 6);
+$Cat = new Cat("Kakis", 5);
 
-Dog::woof();
+echo "<br>";
+
+Dog::eat();
+echo "<br>";
+
+Cat::eat();
+echo "<br>";
 ?>

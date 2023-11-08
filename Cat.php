@@ -1,16 +1,18 @@
 <?php
-class Cat{
+include_once 'Animal.php';
+class Cat extends Animal{
 
-    public $name;
-    private $age = 0;
+    public function __construct(){
+        echo "Puss in boots";
+    }
 
     public function birthday(){
         $this->age = $age+1;
         echo $this->age;
     }
 
-    static function moew() {
-        echo "meow!.";
+    static function eat() {
+        echo "I like whiskas";
     }
 
 }
