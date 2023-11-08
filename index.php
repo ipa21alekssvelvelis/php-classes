@@ -1,8 +1,14 @@
 <?php
-include_once 'Car.php';
+include_once 'Cat.php';
 
-$myCar = new Car("Dacia", 19000);
+// $myCar = new Car("Dacia", 19000);
 
-Car::makeNoise();
+$Mincis = new Cat();
+$Brincis = new Cat();
+
+$Mincis->birthday();
+$Brincis->birthday();
+
+Cat::moew();
 
 ?>
