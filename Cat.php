@@ -2,13 +2,10 @@
 include_once 'Animal.php';
 class Cat extends Animal{
 
-    public function __construct(){
+    public function __construct($name, $age){
         echo "Puss in boots";
-    }
-
-    public function birthday(){
-        $this->age = $age+1;
-        echo $this->age;
+        parent::__construct($name, $age);
+        
     }
 
     static function eat() {

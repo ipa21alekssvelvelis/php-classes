@@ -9,6 +9,11 @@ abstract class Animal{
         $this->age = $age;
     }
     
+    public function birthday(){
+        $this->age = $age+1;
+        echo $this->age;
+    }
+
     abstract static function eat();
 }
 
